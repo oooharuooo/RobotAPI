@@ -3,4 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import { AppProvider } from "./context";
+
+ReactDOM.render(
+	<AppProvider>
+		<App />
+	</AppProvider>,
+	document.getElementById("root")
+);
