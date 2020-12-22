@@ -1,13 +1,15 @@
 import Robot from "./components/Robot";
-import { useGlobalContext } from "./context";
+import "./index.css";
 
 function App() {
-	const { studentData } = useGlobalContext();
-	console.log(studentData);
 	return (
-		<div>
-			<Robot />
-		</div>
+		<main className="main-container">
+			<div className="inner-container">
+				<div className="square-container">
+					<Robot />
+				</div>
+			</div>
+		</main>
 	);
 }
 
